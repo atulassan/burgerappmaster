@@ -9,7 +9,7 @@ export function* logoutSaga(action) {
   yield call([localStorage, 'removeItem'], "token");
   yield call([localStorage, 'removeItem'], "expirationDate");
   yield call([localStorage, 'removeItem'], "userId");
-  yield put(actions.logoutSucceed());
+  yield put(actions.logoutSucceed()); 
 }
 
 
